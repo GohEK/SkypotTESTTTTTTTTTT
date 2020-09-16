@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlueLight">
+
+    <TextView
+        android:id="@+id/tv_modify_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="修改密码"
+        android:textColor="@color/colorBlue"
+        android:textSize="40sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_modify_pwd"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="35dp"
+        android:text="欢迎用户&#12288;:"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_stu_number"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_modify_pwd"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="30dp"
+        android:padding="5dp"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_stu_number"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:text="初始密码&#12288;:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/et_original_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_stu_number"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="60dp"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:textColor="@color/colorGreen"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_original_pwd"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:text="新&#12288;密&#12288;码:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/et_new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_original_pwd"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="60dp"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:textColor="@color/colorGreen"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_new_pwd"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="25dp"
+        android:text="确认新密码:"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/et_confirm_new_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/et_new_pwd"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="60dp"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:textColor="@color/colorGreen"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/et_confirm_new_pwd"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn_modify_pwd"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_login"
+            android:text="修改"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/btn_cancel"
+            android:text="取消"
+            android:textSize="25sp" />
+    </LinearLayout>
+</RelativeLayout>

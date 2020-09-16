@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Skypot</string>
+    <string name="Cancel">Cancel  Order</string>
+    <string name="Return"><![CDATA[<]]></string>
+</resources>
